@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LastFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sworiPasuxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="პირველი კითხვის პასუხი იყო 4. შენ უპასუხე:"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <TextView
+        android:id="@+id/last1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <TextView
+        android:id="@+id/sworiPasuxi2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="135dp"
+        android:gravity="center"
+        android:text="მეორე კითხვის პასუხი იყო 12. შენ უპასუხე:"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <TextView
+        android:id="@+id/last2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/sworiPasuxi3"
+        app:layout_constraintTop_toBottomOf="@+id/sworiPasuxi3" />
+
+    <TextView
+        android:id="@+id/sworiPasuxi3"
+        android:layout_width="272dp"
+        android:layout_height="61dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="მესამე კითხვის პასუხია 5. შენ უპასუხე:"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/last3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/sworiPasuxi2"
+        tools:layout_editor_absoluteX="50dp" />
+
+</LinearLayout>

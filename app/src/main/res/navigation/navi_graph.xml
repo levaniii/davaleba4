@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.qa.fragments.FirstFragment"
+        android:label="fragment1"
+        tools:layout="@layout/fragment_pirveligverdi">
+        <action
+            android:id="@+id/action_questionFragment1_to_questionFragment2"
+            app:destination="@id/fragment2" />
+        <argument
+            android:name="pasuxi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.qa.fragments.SecondFragment"
+        android:label="fragment2"
+        tools:layout="@layout/fragment_meoregverdi">
+        <action
+            android:id="@+id/action_questionFragment2_to_finalFragment"
+            app:destination="@id/lastFragment" />
+        <argument
+            android:name="erti"
+            app:argType="string" />
+        <argument
+            android:name="ori"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.example.qa.fragments.LastFragment"
+        android:label="lastFragment"
+        tools:layout="@layout/fragment_bolo">
+        <argument
+            android:name="number"
+            app:argType="string" />
+        <argument
+            android:name="number2"
+            app:argType="string" />
+        <argument
+            android:name="number3"
+            app:argType="string" />
+    </fragment>
+    <argument
+        android:name="number"
+        app:argType="integer"
+        android:defaultValue="1"/>
+
+    <fragment android:id="@+id/myFragment">
+        <argument
+            android:name="myArg"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+
+</navigation>
